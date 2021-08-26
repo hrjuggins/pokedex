@@ -22,10 +22,12 @@
     border-bottom: 2px solid $black;
     display: flex;
     align-items: center;
+    box-shadow: inset 5px -01px 0px 2px #0000005b;
   }
 
   .circle {
     border-radius: 50%;
+    box-shadow: inset 5px -11px 0px 2px #0000005b;
   }
 
   .bigCircle {
@@ -57,6 +59,8 @@
     height: 480px;
     display: flex;
     flex-direction: column;
+    box-shadow: inset 5px -11px 0px 2px #0000005b;
+
     h1 {
       padding: 0 30px;
     }
@@ -68,6 +72,7 @@
       margin: 0px auto;
       color: $text-color;
       overflow: hidden;
+      box-shadow: inset 5px 5px 0px 2px #0000005b;
     }
   }
 }

@@ -52,7 +52,7 @@
       font-family: monospace;
       font-size: 16px;
       outline: none;
-      cursor: pointer;
+      cursor: url("../images/pokeball.png"), auto;
       text-decoration: none;
       &:disabled {
         color: lighten($text-color, 35%);
