@@ -1,0 +1,19 @@
+$pokedex-red: red;
+$background-color: #f4f9e9;
+$background-color-dark: #bac399;
+$text-color: #757575;
+$black: #333;
+
+html,
+body {
+  margin: 0;
+}
+
+h1,
+p {
+  font-family: monospace;
+}
+
+@import "layout.scss";
+@import "pokemon.scss";
+@import "pokemon-details.scss";

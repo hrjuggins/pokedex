@@ -1,0 +1,63 @@
+.screen-container {
+  position: relative;
+  height: 100%;
+  .search-input {
+    padding: 5px 10px;
+    margin: 5px;
+    background: none;
+    border: none;
+    color: #333;
+    font-family: monospace;
+    font-size: 16px;
+    outline: none;
+  }
+  .list-container {
+    height: calc(100% - 80px);
+    overflow: scroll;
+    ul {
+      height: 100%;
+      padding: 0;
+      li {
+        .list-item {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-decoration: none;
+          margin: 0 20px;
+          p {
+            color: $text-color;
+            margin: 0 20px;
+            text-transform: capitalize;
+          }
+        }
+        &:hover {
+          background-color: $background-color-dark;
+        }
+      }
+    }
+  }
+  .list-container-bottom {
+    height: 30px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    button,
+    a {
+      margin: 5px;
+      background: none;
+      border: none;
+      color: $text-color;
+      font-family: monospace;
+      font-size: 16px;
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+      &:disabled {
+        color: lighten($text-color, 35%);
+        cursor: initial;
+      }
+    }
+  }
+}
