@@ -8,10 +8,10 @@
 
 ## Run locally
 
-    ``` shell
-    cd pokedex/
-    npm run develop
-    ```
+```shell
+cd pokedex/
+npm run develop
+```
 ## Build for development
 
 ```shell
