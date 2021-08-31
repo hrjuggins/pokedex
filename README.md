@@ -1,9 +1,6 @@
 <p align="center">
     <img alt="Gatsby" src="https://cdn2.bulbagarden.net/upload/4/4b/Pok%C3%A9dex_logo.png" width="60" />
 </p>
-<h1 align="center">
-  Pokedex
-</h1>
 
 ## View live app
 
