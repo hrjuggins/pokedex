@@ -19,6 +19,15 @@ cd pokedex/
 npm run build
 ```
 
+## To run tests
+
+``` cd pokedex/
+//to run end to end tests
+npm run test:e2e
+//to run unit tests
+npm run test:unit
+```
+
 ## Dependencies used
 
  - Jest and react testing library for unit testing
