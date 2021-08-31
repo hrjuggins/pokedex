@@ -6,6 +6,7 @@ const fetchData = async () => {
   );
   const pokemonList = await Promise.all(
     pokemonResult.results.map(async (pokemonEach) => {
+      // Get individual pokemon details
       const {
         data: {
           name,
@@ -16,6 +17,8 @@ const fetchData = async () => {
           species,
         },
       } = await axios.get(pokemonEach.url);
+
+      // Get pokemon flavor text
       const {
         data: { flavor_text_entries },
       } = await axios.get(species.url);
@@ -28,11 +31,13 @@ const fetchData = async () => {
 
 exports.createPages = async ({ actions: { createPage } }) => {
   const pokemonData = await fetchData();
+  console.log(pokemonData);
   createPage({
     path: "/",
     component: require.resolve("./src/templates/pokemon.js"),
     context: { data: pokemonData },
   });
+
   pokemonData.forEach((pokemon) => {
     createPage({
       path: `/${pokemon.name}`,

@@ -55,7 +55,7 @@
       cursor: url("../images/pokeball.png"), auto;
       text-decoration: none;
       &:disabled {
-        color: lighten($text-color, 35%);
+        color: lighten($text-color, 25%);
         cursor: initial;
       }
     }

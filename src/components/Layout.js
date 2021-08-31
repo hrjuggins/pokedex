@@ -3,7 +3,7 @@ import "../styles/main.scss";
 
 const Layout = ({ children }) => {
   return (
-    <div className="container">
+    <main className="container">
       <div className="outer">
         <div className="top">
           <div className="circle bigCircle" />
@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
           <div className="screen">{children}</div>
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

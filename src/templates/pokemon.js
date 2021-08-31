@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link } from "gatsby";
 import Layout from "../components/Layout";
+import SEO from "../components/Seo";
 
 const Pokemon = ({ pageContext: { data } }) => {
   const [search, setSearch] = useState("");
@@ -22,6 +23,7 @@ const Pokemon = ({ pageContext: { data } }) => {
 
   return (
     <Layout>
+      <SEO title="Pokedex" />
       <div className="screen-container">
         <input
           className="search-input"
@@ -40,7 +42,10 @@ const Pokemon = ({ pageContext: { data } }) => {
               return (
                 <li key={`pokemon-${pokemon.name}`}>
                   <Link to={`/${pokemon.name}`} className="list-item">
-                    <img src={pokemon.front_default} alt={pokemon.name} />
+                    <img
+                      src={pokemon.front_default}
+                      alt={`image of pokemon ${pokemon?.name}`}
+                    />
                     <p>{pokemon.name}</p>
                   </Link>
                 </li>
