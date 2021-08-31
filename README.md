@@ -21,10 +21,13 @@ npm run build
 
 ## To run tests
 
-``` cd pokedex/
-//to run end to end tests
+``` shell
+cd pokedex/
+<!-- to run end to end test -->
+<!-- these tests will open in chrome -->
 npm run test:e2e
-//to run unit tests
+
+<!-- to run unit tests -->
 npm run test:unit
 ```
 
