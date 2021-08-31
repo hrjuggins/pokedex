@@ -5,6 +5,8 @@
   Pokedex
 </h1>
 
+## View live app
+
 <a align="center" href="https://harry-pokedex.netlify.app">Live app</a>
 
 ## Run locally
@@ -13,5 +15,16 @@
     cd pokedex/
     npm run develop
     ```
-Site is now running at http://localhost:8000!
+## Build for development
+
+```shell
+cd pokedex/
+npm run build
+```
+
+## Dependencies used
+
+ - Jest and react testing library for unit testing
+ - Cypress for end 2 end tests
+ - Cypress axe for accessibility tests
 
