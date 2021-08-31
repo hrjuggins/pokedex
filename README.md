@@ -8,7 +8,7 @@
 
 ## Run locally
 
-    ```shell
+    ``` shell
     cd pokedex/
     npm run develop
     ```
