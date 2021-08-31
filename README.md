@@ -23,7 +23,7 @@ npm run build
 
 ``` shell
 cd pokedex/
-<!-- to run end to end test -->
+<!-- to run end to end tests -->
 <!-- these tests will open in chrome -->
 npm run test:e2e
 
