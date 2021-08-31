@@ -9,13 +9,11 @@
 ## Run locally
 
 ```shell
-cd pokedex/
 npm run develop
 ```
 ## Build for development
 
 ```shell
-cd pokedex/
 npm run build
 ```
 
@@ -24,14 +22,12 @@ npm run build
 To run end to end tests (these tests will open in a chrome instance)
 
 ``` shell
-cd pokedex/
 npm run test:e2e
 ```
 
 To run unit test
 
 ``` shell
-cd pokedex/
 npm run test:unit
 ```
 
